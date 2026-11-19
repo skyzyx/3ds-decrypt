@@ -1,0 +1,13 @@
+{
+  "hooks": [
+    {
+      "action": {
+        "command": "kirograph sync --quiet --background >/dev/null 2>&1 || true",
+        "type": "command"
+      },
+      "name": "KiroGraph Sync on Agent Stop",
+      "trigger": "Stop"
+    }
+  ],
+  "version": "v1"
+}

@@ -1,0 +1,13 @@
+{
+  "hooks": [
+    {
+      "action": {
+        "command": "kirograph mem watchmen synthesize --quiet >/dev/null 2>&1 || true",
+        "type": "command"
+      },
+      "name": "KiroGraph Watchmen",
+      "trigger": "Stop"
+    }
+  ],
+  "version": "v1"
+}

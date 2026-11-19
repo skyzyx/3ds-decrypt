@@ -1,0 +1,22 @@
+[project]
+name = "3ds-decrypt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ryan Parman", email = "ryan@ryanparman.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pycryptodome>=4.5.0",
+]
+
+[project.scripts]
+3ds-decrypt = "_3ds_decrypt:main"
+
+[tool.uv.build-backend]
+module-name = "_3ds_decrypt"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
